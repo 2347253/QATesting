@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.theatre-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.available {
+    background-color: #28a745; /* Green for available */
+}
+
+.booked {
+    background-color: #dc3545; /* Red for booked */
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+input[type=number] {
+    padding: 10px;
+    width: 200px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theatre Booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Theatre Seat Booking</h1>
+        <div id="theatre-layout" class="theatre-layout"></div>
+        <div id="message"></div>
+        <div class="controls">
+            <input type="number" id="seat-number" placeholder="Enter seat number (1-50)" min="1" max="50">
+            <button id="book-seat">Book Seat</button>
+            <button id="cancel-seat">Cancel Booking</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
